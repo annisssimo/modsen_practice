@@ -13,7 +13,12 @@ function Form() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <InputField label="Write something: " ref={inputTextRef} />
+      <InputField
+        label="Write something: "
+        id="msg"
+        name="msg"
+        ref={inputTextRef}
+      />
       <Button />
     </form>
   );

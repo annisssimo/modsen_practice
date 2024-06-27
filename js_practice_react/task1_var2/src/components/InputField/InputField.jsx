@@ -6,14 +6,7 @@ const InputField = forwardRef((props, nameInputRef) => {
   return (
     <label>
       {label}
-      <input
-        {...otherProps}
-        ref={nameInputRef}
-        type="text"
-        id="msg"
-        name="msg"
-        required
-      />
+      <input {...otherProps} ref={nameInputRef} type="text" required />
     </label>
   );
 });
